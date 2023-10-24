@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -13,6 +12,7 @@ namespace CIC_Project_Object
         {
             character = GameObject.Find("Player").GetComponent<Character>();
             agent = GetComponent<NavMeshAgent>();
+
         }
 
         void Update()
@@ -26,8 +26,6 @@ namespace CIC_Project_Object
             {
                 agent.SetDestination(character.transform.position);
             }
-
-            // 플레이어 바라보고 가도록
         }
     }
 }
